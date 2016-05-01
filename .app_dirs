@@ -1,0 +1,10 @@
+# See .bash_aliases for shortcuts (cl, la, n6, etc.)
+
+# App Directories 
+alias me="cd ~/;cl"
+alias cdd="cd ~/development/;la"
+alias cdp="cd ~/development/projects/;la"
+alias cdt="cd ~/development/tutorials/;la"
+alias cdv="cd ~/development/dev-notes/;la"
+alias nemo="cd ~/development/projects/nemo-analytics/;n10;la"
+alias socg="cd ~/development/projects/socialguard/;n12;la"

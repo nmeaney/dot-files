@@ -11,6 +11,11 @@ if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
+# Load application directory aliases
+if [ -f ~/.app_dirs ]; then
+  . ~/.app_dirs
+fi
+
 # Load application variables
 if [ -f ~/.app_vars ]; then
   . ~/.app_vars

@@ -71,7 +71,7 @@ alias ns="node server"
 alias ni="node index"
 alias n4="cl;nvm use v4"
 alias n5="cl;nvm use v5"
-alias n6="cl'nvm use v6"
+alias n6="cl;nvm use v6"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
 
