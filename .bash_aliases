@@ -15,6 +15,7 @@ alias srb="source ~/.bash_profile"
 alias vib="vi ~/.bash_profile;srb"
 alias via="vi ~/.bash_aliases;srb"
 alias vie="vi ~/.app_vars;srb;"
+alias vid="vi ~/.app_dirs;srb;"
 
 # Git
 alias gcl="git clone"
