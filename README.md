@@ -1,3 +1,3 @@
 # dot-files
 
-Personal dot files.
+My dot files.
