@@ -78,6 +78,7 @@ alias bcc="bower cache clean"
 alias am="atom ."
 alias op="open ."
 alias gt="grunt"
+alias io="ionic"
 alias vg="vagrant"
 alias glc="glance --p 3030 -v"
 alias chrome='open -a "Google Chrome"'
