@@ -26,12 +26,14 @@ alias gk="git checkout"
 alias ga="git add"
 alias gaa="git add ."
 alias gc="git commit -m"
-alias gac="git commit -a -m"
+alias gac="git commit -am"
 alias gp="git push"
 alias gpt="git push --tags"
 alias gpl="git pull"
 alias gd="git diff"
 alias gl="git log"
+# Undo previous commit
+alias guc="git reset --soft HEAD^"
 alias gri="git rebase -i"
 
 # Node.js
@@ -51,6 +53,7 @@ alias nps="npm start"
 alias npt="npm test"
 alias npr="npm run"
 alias npl="npm ls --depth 0"
+alias npp="npm prune"
 alias npcc="npm cache clean"
 alias npg="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check-updates react-native-cli webpack"
 
