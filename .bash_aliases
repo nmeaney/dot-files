@@ -43,7 +43,6 @@ alias na="node app"
 alias ns="node server"
 alias ni="node index"
 alias n4="cl;nvm use v4"
-alias n5="cl;nvm use v5"
 alias n6="cl;nvm use v6"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
@@ -58,6 +57,7 @@ alias npcc="npm cache clean"
 alias npg="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check-updates react-native-cli webpack"
 
 # MongodB
+# Run "brew services start mongodb" after "brew install mongodb" before using these commands:
 alias mgstop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 alias mgstart="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 alias mgrestart="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist;launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
@@ -74,8 +74,8 @@ alias vb="virtualbox"
 #alias dmgo="dm start default;eval '$(docker-machine env default)'"
 
 # bower
-alias br="bower"
-alias bcc="bower cache clean"
+# alias br="bower"
+# alias bcc="bower cache clean"
 
 # misc
 alias am="atom ."
@@ -85,5 +85,5 @@ alias io="ionic"
 alias vg="vagrant"
 alias glc="glance --p 3030 -v"
 alias chrome='open -a "Google Chrome"'
-alias brewup="brew cleanup && brew update && brew upgrade"
+alias brewup="brew prune && brew cleanup && brew update && brew upgrade"
 alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"

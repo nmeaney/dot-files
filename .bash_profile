@@ -1,13 +1,9 @@
-# load nvm
-export NVM_DIR="/Users/nmeaney/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
 # Postgres command line tools
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+# export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Upgrade max open files limit 
-ulimit -n 65536
-ulimit -u 2048
+# ulimit -n 65536
+# ulimit -u 2048
 
 # Load bash aliases
 if [ -f ~/.bash_aliases ]; then
@@ -23,3 +19,7 @@ fi
 if [ -f ~/.app_vars ]; then
   . ~/.app_vars
 fi
+
+# Load nvm
+export NVM_DIR="/Users/noelmeaney/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
