@@ -32,20 +32,21 @@ alias gpt="git push --tags"
 alias gpl="git pull"
 alias gd="git diff"
 alias gl="git log"
-# Undo previous commit
-alias guc="git reset --soft HEAD^"
+alias guc="git reset --soft HEAD^" # Undo previous commit
 alias gri="git rebase -i"
 
 # Node.js
-alias no="node"
+alias nd="node"
 alias bn="babel-node"
 alias na="node app"
 alias ns="node server"
-alias ni="node index"
+alias ni="node-inspector"
+alias nv="node --version"
 alias n4="cl;nvm use v4"
 alias n6="cl;nvm use v6"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
+alias naws="cl;nvm use aws"
 
 # npm
 alias nps="npm start"
