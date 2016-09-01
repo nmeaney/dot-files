@@ -56,6 +56,7 @@ alias npl="npm ls --depth 0"
 alias npp="npm prune"
 alias npcc="npm cache clean"
 alias npg="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check-updates react-native-cli webpack"
+alias npd="rm npm-debug.log"
 
 # MongodB
 # Run "brew services start mongodb" after "brew install mongodb" before using these commands:
@@ -75,11 +76,12 @@ alias vb="virtualbox"
 #alias dmgo="dm start default;eval '$(docker-machine env default)'"
 
 # bower
-# alias br="bower"
-# alias bcc="bower cache clean"
+alias br="bower"
+alias bcc="bower cache clean"
 
 # misc
 alias am="atom ."
+alias co="code ."
 alias op="open ."
 alias gt="grunt"
 alias io="ionic"
