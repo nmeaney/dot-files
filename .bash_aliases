@@ -32,21 +32,21 @@ alias gpt="git push --tags"
 alias gpl="git pull"
 alias gd="git diff"
 alias gl="git log"
-# Undo previous commit
-alias guc="git reset --soft HEAD^"
+alias guc="git reset --soft HEAD^" # Undo previous commit
 alias gri="git rebase -i"
 
 # Node.js
-alias no="node"
+alias nd="node"
 alias bn="babel-node"
 alias na="node app"
 alias ns="node server"
-alias ni="node index"
+alias ni="node-inspector"
+alias nv="node --version"
 alias n4="cl;nvm use v4"
-alias n5="cl;nvm use v5"
 alias n6="cl;nvm use v6"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
+alias naws="cl;nvm use aws"
 
 # npm
 alias nps="npm start"
@@ -56,8 +56,10 @@ alias npl="npm ls --depth 0"
 alias npp="npm prune"
 alias npcc="npm cache clean"
 alias npg="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check-updates react-native-cli webpack"
+alias npd="rm npm-debug.log"
 
 # MongodB
+# Run "brew services start mongodb" after "brew install mongodb" before using these commands:
 alias mgstop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 alias mgstart="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 alias mgrestart="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist;launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
@@ -79,11 +81,12 @@ alias bcc="bower cache clean"
 
 # misc
 alias am="atom ."
+alias co="code ."
 alias op="open ."
 alias gt="grunt"
 alias io="ionic"
 alias vg="vagrant"
 alias glc="glance --p 3030 -v"
 alias chrome='open -a "Google Chrome"'
-alias brewup="brew cleanup && brew update && brew upgrade"
+alias brewup="brew prune && brew cleanup && brew update && brew upgrade"
 alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
