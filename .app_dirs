@@ -4,7 +4,6 @@
 alias me="cd ~/;cl"
 alias cdd="cd ~/development/;n6;la"
 alias cdp="cd ~/development/projects/;n6;la"
-alias cdi="cd ~/development/inflight/;n12;la"
 alias cdt="cd ~/development/tutorials/;n6;la"
 alias cdv="cd ~/development/dev-notes/;n6;la"
 
@@ -13,6 +12,7 @@ alias nemo="cd ~/development/projects/nemo-analytics/;n10;la"
 alias socg="cd ~/development/projects/socialguard/;n12;la"
 
 # InFlight
+alias cdi="cd ~/development/inflight/;n12;la"
 alias bkof="cd ~/development/inflight/swift-admin-utils/;n12;la"
 alias mif="mongo inflightentertainmentmetadata"
 
