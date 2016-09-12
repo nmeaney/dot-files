@@ -9,6 +9,7 @@ alias rmd="rm -rf"
 alias chx="chmod +x"
 alias pg="ps ax | grep"
 alias hg="history | grep"
+alias psg="ps ax | grep"
 alias untar="tar xvf"
 
 alias srb="source ~/.bash_profile"
@@ -64,6 +65,9 @@ alias mgstop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plis
 alias mgstart="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 alias mgrestart="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist;launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 
+# Postgres
+alias pg="'/Applications/Postgres.app/Contents/Versions/9.5/bin'/psql -p5432"
+
 # Docker
 alias dk="docker"
 alias dkc="docker ps -a"
@@ -83,9 +87,10 @@ alias bcc="bower cache clean"
 alias am="atom ."
 alias co="code ."
 alias op="open ."
-alias gt="grunt"
 alias io="ionic"
 alias vg="vagrant"
+alias grr="grunt"
+alias vb="virtualbox"
 alias glc="glance --p 3030 -v"
 alias chrome='open -a "Google Chrome"'
 alias brewup="brew prune && brew cleanup && brew update && brew upgrade"
