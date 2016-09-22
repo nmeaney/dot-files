@@ -22,7 +22,7 @@ if [ -f ~/.app_vars ]; then
 fi
 
 # Load nvm
-export NVM_DIR="/Users/noelmeaney/.nvm"
+export NVM_DIR="/Users/nmeaney/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # awscli
@@ -33,4 +33,6 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
+
+source ~/.bashrc
 
