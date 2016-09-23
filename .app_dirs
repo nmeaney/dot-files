@@ -13,6 +13,7 @@ alias nemo="cd ~/development/projects/nemo-analytics/;n10;la"
 alias socg="cd ~/development/projects/socialguard/;n12;la"
 
 # InFlight
+alias cdi="cd ~/development/inflight/;n12;la"
+alias swi="cd ~/development/inflight/swift--ifd-client/;n4;la"
 alias bkof="cd ~/development/inflight/swift-admin-utils/;n12;la"
 alias mif="mongo inflightentertainmentmetadata"
-
