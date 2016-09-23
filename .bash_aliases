@@ -35,6 +35,7 @@ alias gd="git diff"
 alias gl="git log"
 alias guc="git reset --soft HEAD^" # Undo previous commit
 alias gri="git rebase -i"
+alias gstl="git stash list"
 
 # Node.js
 alias nd="node"
@@ -53,6 +54,8 @@ alias naws="cl;nvm use aws"
 alias nps="npm start"
 alias npt="npm test"
 alias npr="npm run"
+alias nprd="npm run dev"
+alias nprw="npm run watch"
 alias npl="npm ls --depth 0"
 alias npp="npm prune"
 alias npcc="npm cache clean"
