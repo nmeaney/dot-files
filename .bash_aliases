@@ -35,7 +35,7 @@ alias gd="git diff"
 alias gl="git log"
 alias guc="git reset --soft HEAD^" # Undo previous commit
 alias gri="git rebase -i"
-alias gstl="git stash list"
+alias gst="git stash"
 
 # Node.js
 alias nd="node"
@@ -59,8 +59,9 @@ alias nprw="npm run watch"
 alias npl="npm ls --depth 0"
 alias npp="npm prune"
 alias npcc="npm cache clean"
-alias npg="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check-updates react-native-cli webpack"
+alias npgi="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check-updates react-native-cli webpack"
 alias npd="rm npm-debug.log"
+alias npo="npm outdated"
 
 # MongodB
 # Run "brew services start mongodb" after "brew install mongodb" before using these commands:
