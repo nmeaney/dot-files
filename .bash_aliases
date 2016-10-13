@@ -46,9 +46,10 @@ alias ni="node-inspector"
 alias nv="node --version"
 alias n4="cl;nvm use v4"
 alias n6="cl;nvm use v6"
+alias n7="cl;nvm use v7"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
-alias naws="cl;nvm use aws"
+alias naws="cl;nvm use v4.3.2"
 
 # npm
 alias nps="npm start"
