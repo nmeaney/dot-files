@@ -1,8 +1,10 @@
 # Postgres command line tools
 # export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+# 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
 
-# Upgrade max open files limit 
+# Upgrade max open files limit (for MongoDB?)
 # ulimit -n 65536
 # ulimit -u 2048
 
@@ -23,10 +25,13 @@ fi
 
 # Load nvm
 export NVM_DIR="/Users/nmeaney/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-# awscli
+# aws cli
 complete -C aws_completer aws
+
+# Unset Docker Toolbox env vars to allow Docker for Mac to work
+unset ${!DOCKER_*}
 
 # git-bash-prompt - installed with brew install bash-git-prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then

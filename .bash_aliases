@@ -78,9 +78,6 @@ alias dki="docker images"
 alias dkr="docker run"
 alias fig="docker-compose"
 alias dm="docker-machine"
-alias vb="virtualbox"
-#alias dmstart='eval "$(docker-machine env default)"'
-#alias dmgo="dm start default;eval '$(docker-machine env default)'"
 
 # bower
 alias br="bower"
