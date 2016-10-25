@@ -50,6 +50,8 @@ alias n7="cl;nvm use v7"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
 alias naws="cl;nvm use v4.3.2"
+# nvmup OLD_VERSION NEW_VERSION
+alias nvmup="~/development/projects/scripts-n-stuff/scripts/nvm-update.sh"
 
 # npm
 alias nps="npm start"
@@ -71,7 +73,7 @@ alias mgstart="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
 alias mgrestart="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist;launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 
 # Postgres
-alias pg="'/Applications/Postgres.app/Contents/Versions/9.5/bin'/psql -p5432"
+alias pgs="'/Applications/Postgres.app/Contents/Versions/9.5/bin'/psql -p5432"
 
 # Docker
 alias dk="docker"
@@ -80,7 +82,6 @@ alias dki="docker images"
 alias dkr="docker run"
 alias fig="docker-compose"
 alias dm="docker-machine"
-alias vb="virtualbox"
 #alias dmstart='eval "$(docker-machine env default)"'
 #alias dmgo="dm start default;eval '$(docker-machine env default)'"
 
