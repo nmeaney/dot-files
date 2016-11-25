@@ -101,5 +101,6 @@ alias grr="grunt"
 alias vb="virtualbox"
 alias glc="glance --p 3030 -v"
 alias chrome='open -a "Google Chrome"'
-alias brewup="brew prune && brew cleanup && brew update && brew upgrade"
+alias brewup="brew prune && brew cleanup && brew cask cleanup && brew update && brew upgrade"
 alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
+
