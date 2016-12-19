@@ -52,8 +52,8 @@ alias n8="cl;nvm use v8"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
 alias naws="cl;nvm use v4.3.2"
-# nvmup OLD_VERSION NEW_VERSION
-alias nvmup="~/development/projects/scripts-n-stuff/scripts/nvm-update.sh"
+# usage: nodeup OLD_VERSION NEW_VERSION
+alias nodeup="~/development/projects/scripts-n-stuff/scripts/nvm-update.sh"
 
 # npm
 alias nps="npm start"
@@ -101,6 +101,7 @@ alias grr="grunt"
 alias vb="virtualbox"
 alias glc="glance --p 3030 -v"
 alias chrome='open -a "Google Chrome"'
-alias brewup="brew prune && brew cleanup && brew cask cleanup && brew update && brew upgrade"
+alias brewcl="brew prune && brew cleanup && brew cask cleanup"
+alias brewup="brewcl && brew update && brew upgrade"
 alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
 
