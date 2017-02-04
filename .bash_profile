@@ -1,6 +1,5 @@
 # Postgres command line tools
 # export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-
 # 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
 
@@ -38,4 +37,3 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
-
