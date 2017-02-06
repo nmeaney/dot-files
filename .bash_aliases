@@ -104,4 +104,3 @@ alias chrome='open -a "Google Chrome"'
 alias brewcl="brew prune && brew cleanup && brew cask cleanup"
 alias brewup="brewcl && brew update && brew upgrade"
 alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
-
