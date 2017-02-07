@@ -10,7 +10,13 @@ alias chx="chmod +x"
 alias pg="ps ax | grep"
 alias hg="history | grep"
 alias psg="ps ax | grep"
-alias untar="tar xvf"
+alias rds="rm .DS_Store"
+
+alias dotar="tar -czvf"
+alias untar="tar -xzvf"
+
+# Ec2 scp example
+# scp -i /Users/noelmeaney/keys/some-key.pem ubuntu@54.72.215.193:/data/outbox/some-file.txt ~/Downloads/
 
 alias srb="source ~/.bash_profile"
 alias vib="vi ~/.bash_profile;srb"
@@ -36,7 +42,7 @@ alias gl="git log"
 alias guc="git reset --soft HEAD^" # Undo previous commit
 alias gri="git rebase -i"
 alias gst="git stash"
-alias grH="git reset HEAD"
+alias grh="git reset HEAD"
 
 # Node.js
 alias nd="node"
@@ -82,10 +88,14 @@ alias dk="docker"
 alias dkc="docker ps -a"
 alias dki="docker images"
 alias dkr="docker run"
-alias fig="docker-compose"
-alias dm="docker-machine"
+alias dke="docker exec -it"
+alias doc="docker-compose"
+alias dom="docker-machine"
 #alias dmstart='eval "$(docker-machine env default)"'
 #alias dmgo="dm start default;eval '$(docker-machine env default)'"
+
+# pm2
+alias p2="pm2"
 
 # bower
 alias br="bower"
