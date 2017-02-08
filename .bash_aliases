@@ -43,7 +43,7 @@ alias guc="git reset --soft HEAD^" # Undo previous commit
 alias gri="git rebase -i"
 alias gst="git stash"
 alias grh="git reset HEAD"
-alias gtl="git tag --list"
+alias gtg="git tag"
 alias gsl="git stash list"
 
 # Node.js
