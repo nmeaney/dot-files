@@ -22,7 +22,7 @@ if [ -f ~/.app_vars ]; then
 fi
 
 # Load nvm
-export NVM_DIR="/Users/nmeaney/.nvm"
+export NVM_DIR="/Users/$(whoami)/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # aws cli

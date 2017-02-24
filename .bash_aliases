@@ -15,8 +15,8 @@ alias rds="rm .DS_Store"
 alias dotar="tar -czvf"
 alias untar="tar -xzvf"
 
-# Ec2 scp example
-# scp -i /Users/noelmeaney/keys/some-key.pem ubuntu@54.72.215.193:/data/outbox/some-file.txt ~/Downloads/
+# scp sample send
+# scp -i /Users/noelmeaney/keys/ifd_swift_backend_development_key_pair.pem everhub-15-02-2017_15-27.zip ubuntu@54.72.215.193:/data/staticweb/
 
 alias srb="source ~/.bash_profile"
 alias vib="vi ~/.bash_profile;srb"

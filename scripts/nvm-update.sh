@@ -14,7 +14,7 @@ TO_VERSION=$2
 # TODO: Check that nvm is installed
 
 # Load nvm
-export NVM_DIR="/Users/nmeaney/.nvm"
+export NVM_DIR="/Users/$(whoami)/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Check for input versions
