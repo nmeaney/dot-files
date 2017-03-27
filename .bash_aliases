@@ -17,6 +17,9 @@ alias untar="tar -xzvf"
 
 # scp sample send
 # scp -i /Users/noelmeaney/keys/ifd_swift_backend_development_key_pair.pem everhub-15-02-2017_15-27.zip ubuntu@54.72.215.193:/data/staticweb/
+# scp -i ~/keys/ifd_swift_backend_development_key_pair.pem serveruud.txt iubuntu@54.194.151.58:/home/ubuntu/
+# scp everhub-northern-avionics-23-03-2017_11-41.zip root@172.1.0.1:/data/staticweb/
+# scp kontron@192.168.10.170:/data/certs ./kontron/
 
 alias srb="source ~/.bash_profile"
 alias vib="vi ~/.bash_profile;srb"

@@ -1,3 +1,5 @@
 # dot-files
 
-My dot files.
+Some dot files and scripts.
+
+
