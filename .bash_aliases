@@ -4,7 +4,7 @@
 alias eo="echo"
 alias cl="clear;pwd"
 alias la="cl;ls -la"
-alias cpd="cp -r"
+alias cpd="cp -avr"
 alias rmd="rm -rf"
 alias chx="chmod +x"
 alias pg="ps ax | grep"
@@ -78,6 +78,7 @@ alias npcc="npm cache clean"
 alias npgi="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check-updates react-native-cli webpack"
 alias npd="rm npm-debug.log"
 alias npo="npm outdated"
+alias npv="npm version"
 
 # MongodB
 # Run "brew services start mongodb" after "brew install mongodb" before using these commands:
