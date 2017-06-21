@@ -58,11 +58,11 @@ alias ni="node-inspector"
 alias nv="node --version"
 alias n4="cl;nvm use v4"
 alias n6="cl;nvm use v6"
-alias n7="cl;nvm use v7"
 alias n8="cl;nvm use v8"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
 alias naws="cl;nvm use v4.3.2"
+alias nls="cl;nvm ls"
 # usage: nodeup OLD_VERSION NEW_VERSION
 alias nodeup="~/development/projects/dot-files/scripts/nvm-update.sh"
 
@@ -95,8 +95,8 @@ alias dkc="docker ps -a"
 alias dki="docker images"
 alias dkr="docker run"
 alias dke="docker exec -it"
-alias doc="docker-compose"
-alias dom="docker-machine"
+alias dco="docker-compose"
+alias dma="docker-machine"
 #alias dmstart='eval "$(docker-machine env default)"'
 #alias dmgo="dm start default;eval '$(docker-machine env default)'"
 

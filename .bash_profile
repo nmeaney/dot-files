@@ -32,7 +32,8 @@ complete -C aws_completer aws
 unset ${!DOCKER_*}
 
 # git-bash-prompt - installed with brew install bash-git-prompt
-if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
-  GIT_PROMPT_THEME=Default
-  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+  __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
+  source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
 fi
+
