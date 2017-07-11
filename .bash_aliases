@@ -64,7 +64,7 @@ alias n12="cl;nvm use v0.12"
 alias naws="cl;nvm use v4.3.2"
 alias nls="cl;nvm ls"
 # usage: nodeup OLD_VERSION NEW_VERSION
-alias nodeup="~/development/projects/dot-files/scripts/nvm-update.sh"
+alias nodeup="~/development/projects/dot-files/scripts/nvm-update-node.sh"
 
 # npm
 alias nps="npm start"
