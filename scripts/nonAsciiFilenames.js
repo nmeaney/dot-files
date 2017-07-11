@@ -6,15 +6,14 @@ const { promisify } = require('util');
 const readDirAsync = promisify(fs.readdir);
 const filePath = process.argv[2] || process.cwd();
 
+console.log(filePath);
+
 readDirAsync(filePath, { encoding: 'utf8' })
 .then(files => {
 
   files
-  .filter(file => {
-  
-    return !/^[\040-\177]*$/.test(file);
-  })
-  .forEach(nonAsciiName => console.log(nonAsciiName));
+  .filter(file => !/^[\040-\177]*$/.test(file))
+  .forEach(nonAsciiFile => console.log(nonAsciiFile));
 })
 .catch(err => {
 
