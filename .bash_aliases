@@ -4,16 +4,18 @@
 alias eo="echo"
 alias cl="clear;pwd"
 alias la="cl;ls -la"
-alias cpd="cp -avr"
+alias cpd="cp -R"
 alias rmd="rm -rf"
 alias chx="chmod +x"
 alias pg="ps ax | grep"
 alias hg="history | grep"
 alias psg="ps ax | grep"
 alias rds="rm .DS_Store"
-
+alias cf="ls | wc -l"
+§
 alias dotar="tar -czvf"
 alias untar="tar -xzvf"
+alias nonascii='find . | grep --color='auto' -P "[^\x00-\x7F]"'
 
 # scp sample send
 # scp -i /Users/noelmeaney/keys/ifd_swift_backend_development_key_pair.pem everhub-15-02-2017_15-27.zip ubuntu@54.72.215.193:/data/staticweb/
