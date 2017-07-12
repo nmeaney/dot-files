@@ -2,10 +2,11 @@
 
 # App Directories 
 alias me="cd ~/;cl"
-alias cdd="cd ~/development/;n6;la"
-alias cdp="cd ~/development/projects/;n6;la"
-alias cdt="cd ~/development/tutorials/;n6;la"
-alias cdv="cd ~/development/dev-notes/;n6;la"
+alias cdd="cd ~/development/;n8;la"
+alias cdp="cd ~/development/projects/;n8;la"
+alias cdt="cd ~/development/tutorials/;n8;la"
+alias cdv="cd ~/development/dev-notes/;n8;la"
+alias cda="cd ~/development/projects/alexa/;n6;la"
 
 # Projects
 alias nemo="cd ~/development/projects/nemo-analytics/;n10;gs"

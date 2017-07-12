@@ -35,13 +35,12 @@ unset ${!DOCKER_*}
 export PATH="$PATH:`yarn global bin`"
 
 # git-bash-prompt - installed with brew install bash-git-prompt
-if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
-  GIT_PROMPT_THEME=Default
-  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+  __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
+  source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 
 # Brew
 # Warning from Brew: Homebrew's sbin was not found in your PATH but you have installed
 # formulae that put executables in /usr/local/sbin. So add this to your ~/.bash_profile:
 export PATH="/usr/local/sbin:$PATH"
-
