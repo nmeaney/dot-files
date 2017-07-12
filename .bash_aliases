@@ -12,10 +12,8 @@ alias hg="history | grep"
 alias psg="ps ax | grep"
 alias rds="rm .DS_Store"
 alias cf="ls | wc -l"
-§
 alias dotar="tar -czvf"
 alias untar="tar -xzvf"
-alias nonascii='find . | grep --color='auto' -P "[^\x00-\x7F]"'
 
 # scp sample send
 # scp -i /Users/noelmeaney/keys/ifd_swift_backend_development_key_pair.pem everhub-15-02-2017_15-27.zip ubuntu@54.72.215.193:/data/staticweb/
@@ -58,6 +56,7 @@ alias na="node app"
 alias ns="node server"
 alias ni="node index"
 alias nv="node --version"
+alias n4="cl;nvm use v4"
 alias n6="cl;nvm use v6"
 alias n8="cl;nvm use v8"
 alias n10="cl;nvm use v0.10"
