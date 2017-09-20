@@ -9,6 +9,7 @@ alias cdv="cd ~/development/dev-notes/;n8;la"
 alias cda="cd ~/development/projects/alexa/;n6;la"
 
 # Projects
+alias volc="cd ~/development/volcano/;n8"
 alias nemo="cd ~/development/projects/nemo-analytics/;n10;gs"
 alias socg="cd ~/development/projects/socialguard/;n12;gs"
 
