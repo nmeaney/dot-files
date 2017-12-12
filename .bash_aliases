@@ -48,6 +48,7 @@ alias gst="git stash"
 alias grh="git reset HEAD"
 alias gtg="git tag"
 alias gsl="git stash list"
+alias gph="git push heroku master"
 
 # Node.js
 alias nd="node"
