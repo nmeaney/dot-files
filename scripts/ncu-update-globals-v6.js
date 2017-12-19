@@ -42,7 +42,7 @@ function buildUpdateCommand(command) {
 }
 
 function doUpdate() {
-  
+
   getUpdateCommands()
   .then(commands => {
 
