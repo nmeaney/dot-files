@@ -50,6 +50,7 @@ alias grh="git reset HEAD"
 alias gtg="git tag"
 alias gsl="git stash list"
 alias glb="git ls-remote --heads origin"
+alias gph="git push heroku master"
 
 # Node.js
 alias nd="node"
@@ -103,23 +104,17 @@ alias dma="docker-machine"
 #alias dmstart='eval "$(docker-machine env default)"'
 #alias dmgo="dm start default;eval '$(docker-machine env default)'"
 
-# pm2
-alias p2="pm2"
-
-# bower
-alias br="bower"
-alias bcc="bower cache clean"
-
 # misc
 alias am="atom ."
 alias co="code ."
 alias op="open ."
 alias io="ionic"
+alias hk="heroku"
 alias vg="vagrant"
-alias grr="grunt"
 alias vb="virtualbox"
 alias glc="glance --p 3030 -v"
 alias chrome='open -a "Google Chrome"'
-alias brewcl="brew prune && brew cleanup && brew cask cleanup"
+alias brewcl="brew prune && brew cleanup -s && brew cask cleanup"
 alias brewup="brewcl && brew update && brew upgrade"
 alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
+
