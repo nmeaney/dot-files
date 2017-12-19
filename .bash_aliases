@@ -1,17 +1,18 @@
 # Bash Aliases
 
 # General
-alias eo="echo"
+alias ee="exit"
+alias ec="echo"
 alias cl="clear;pwd"
 alias la="cl;ls -la"
-alias cpd="cp -avr"
+alias cpd="cp -R"
 alias rmd="rm -rf"
 alias chx="chmod +x"
 alias pg="ps ax | grep"
 alias hg="history | grep"
 alias psg="ps ax | grep"
 alias rds="rm .DS_Store"
-
+alias lwc="ls | wc -l"
 alias dotar="tar -czvf"
 alias untar="tar -xzvf"
 
@@ -48,6 +49,10 @@ alias gst="git stash"
 alias grh="git reset HEAD"
 alias gtg="git tag"
 alias gsl="git stash list"
+<<<<<<< HEAD
+=======
+alias glb="git ls-remote --heads origin"
+>>>>>>> inflight-mac
 alias gph="git push heroku master"
 
 # Node.js
@@ -57,11 +62,12 @@ alias na="node app"
 alias ns="node server"
 alias ni="node index"
 alias nv="node --version"
+alias n4="cl;nvm use v4"
 alias n6="cl;nvm use v6"
 alias n8="cl;nvm use v8"
 alias n10="cl;nvm use v0.10"
 alias n12="cl;nvm use v0.12"
-alias naws="cl;nvm use v6"
+alias naws="cl;nvm use v6.10"
 alias nls="cl;nvm ls"
 # usage: nodeup OLD_VERSION NEW_VERSION
 alias nodeup="~/development/projects/dot-files/scripts/nvm-update-node.sh"
@@ -79,6 +85,7 @@ alias npgi="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check
 alias npd="rm npm-debug.log"
 alias npo="npm outdated"
 alias npv="npm version"
+alias yr="yarn"
 
 # MongodB
 # Run "brew services start mongodb" after "brew install mongodb" before using these commands:
