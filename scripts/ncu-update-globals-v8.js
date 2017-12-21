@@ -29,4 +29,5 @@ async function updateModule(command) {
 
 getModulesToUpdate()
 .then(modules => modules.forEach(command => updateModule(command)))
+.then(modules => console.log(`Updated ${modules.length} package(s)`))
 .catch(err => console.log(err));
