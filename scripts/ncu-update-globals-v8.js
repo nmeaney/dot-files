@@ -7,7 +7,7 @@ async function getModulesToUpdate() {
 
   const { stdout: modulesToUpdate } = await execFile('ncu', ['-g']);
 
-  console.log(stdout);
+  console.log(modulesToUpdate);
 
   return createUpdateCommands(modulesToUpdate);
 }
