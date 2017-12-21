@@ -24,10 +24,11 @@ function createUpdateCommands(modulesToUpdate) {
 
 async function updateModule(command) {
 
+  console.log(command[0], command[1]);
   return await execFile(command[0], command[1]);
 }
 
 getModulesToUpdate()
-.then(modules => modules.forEach(command => updateModule(command)))
+.then(modules => modules.map(command => updateModule(command)))
 .then(modules => console.log(`Updated ${modules.length} package(s)`))
 .catch(err => console.log(err));
