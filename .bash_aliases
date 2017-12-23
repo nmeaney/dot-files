@@ -49,10 +49,7 @@ alias gst="git stash"
 alias grh="git reset HEAD"
 alias gtg="git tag"
 alias gsl="git stash list"
-<<<<<<< HEAD
-=======
 alias glb="git ls-remote --heads origin"
->>>>>>> inflight-mac
 alias gph="git push heroku master"
 
 # Node.js
