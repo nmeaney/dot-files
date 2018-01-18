@@ -44,3 +44,6 @@ fi
 # Warning from Brew: Homebrew's sbin was not found in your PATH but you have installed
 # formulae that put executables in /usr/local/sbin. So add this to your ~/.bash_profile:
 export PATH="/usr/local/sbin:$PATH"
+
+# Brew MongoDB recommendation
+export PATH="/usr/local/opt/mongodb@3.4/bin:$PATH"
