@@ -70,7 +70,7 @@ alias nls="cl;nvm ls"
 # usage: nodeup OLD_VERSION NEW_VERSION
 alias nodeup="~/development/projects/dot-files/scripts/nvm-update-node.sh"
 
-# npm
+# npm & yarn
 alias nps="npm start"
 alias npt="npm test"
 alias npr="npm run"
@@ -83,7 +83,7 @@ alias npgi="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check
 alias npd="rm npm-debug.log"
 alias npo="npm outdated"
 alias npv="npm version"
-alias yr="yarn"
+alias rn="yarn"
 
 # MongodB
 # Run "brew services start mongodb" after "brew install mongodb" before using these commands:
@@ -104,6 +104,11 @@ alias dco="docker-compose"
 alias dma="docker-machine"
 #alias dmstart='eval "$(docker-machine env default)"'
 #alias dmgo="dm start default;eval '$(docker-machine env default)'"
+
+# Kubernetes
+alias mk="minikube"
+alias kc="kubectl"
+alias hl="helm"
 
 # misc
 alias am="atom ."
