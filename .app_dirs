@@ -1,20 +1,60 @@
-# See .bash_aliases for shortcuts (cl, gs, n6, etc.)
+# See .bash_aliases for shortcut definitions (cl, gs, n6, etc.)
 
 # App Directories 
 alias me="cd ~/;cl"
-alias cdd="cd ~/development/;n8;la"
-alias cdp="cd ~/development/projects/;n8;la"
-alias cdt="cd ~/development/tutorials/;n8;la"
-alias cdv="cd ~/development/dev-notes/;n8;la"
+alias cdd="cd ~/development/;n10;la"
+alias cdp="cd ~/development/projects/;n10;la"
+alias cdt="cd ~/development/tutorials/;n10;la"
+alias cdv="cd ~/development/dev-notes/;n10;la"
 alias cda="cd ~/development/projects/alexa/;n6;la"
 
 # Projects
-alias volc="cd ~/development/volcano/;n8"
-alias nemo="cd ~/development/projects/nemo-analytics/;n10;gs"
-alias socg="cd ~/development/projects/socialguard/;n12;gs"
+alias cdot="cd ~/development/projects/dot-files"
+alias volc="cd ~/development/volcano/;n010"
+alias nemo="cd ~/development/projects/nemo-analytics/;n010;gs"
+alias socg="cd ~/development/projects/socialguard/;n012;gs"
 
-# InFlight
-alias cdi="cd ~/development/inflight/;n6;la"
-alias swi="cd ~/development/inflight/swift--ifd-client/;n4;gs"
-alias bkof="cd ~/development/inflight/swift-admin-utils/;n12;gs"
-alias mif="mongo inflightentertainmentmetadata"
+# Shutterstock 
+alias big="cd ~/development/bigstock/;n010;la"
+alias web="cd ~/development/bigstock/web/;n010;gs"
+alias base="cd ~/development/shutterstock/base-web;n8;gs"
+alias foot="cd ~/development/shutterstock/footage-api;n8;gs"
+alias sstk="cd ~/development/shutterstock/sstk/;n8;gs"
+alias off="cd ~/development/offset/offset-web/;n6;gs"
+
+# Testing
+alias jst="TEST_ENV=dev NODE_ENV= NODE_CONFIG_DIR=./packages/server/src/config npr test:unit"
+alias ats="BROWSER=chrome DEV_BIGSTOCK_URL='https://www.bigstockphoto.com' ROCK_ENV=dev bundle exec cucumber"
+
+alias dksstk="docker run -p 80:3000 -it -v /Users/nmeaney/development/shutterstock/sstk:/app sstk /bin/bash"
+
+################################################################################
+# dB Shell
+alias proddb="mysql -h dbrobigstock.bigstockcorp.net -u nmeaney -P 5306 -p coolstockphotos -A"
+
+# Screendoor
+alias ndoor="ssh screendoor_nj02"
+
+# Logs
+alias logs="ssh logs.shuttercorp.net"
+alias qalogs="ssh logs.qa.shuttercorp.net"
+alias devlogs="ssh logs.dev.shuttercorp.net"
+
+# FTP Servers
+alias ftp1="ssh bigstock_ftp_1" # prod-ftp01.nj02.bigstockcorp.net
+alias ftp2="ssh bigstock_ftp_2" # prod-ftp02.nj02.bigstockcorp.net"
+
+# dB Servers
+alias db01="ssh nmeaney@prod-dbbigstock03.nj02.bigstockcorp.net"
+alias db03="ssh nemaney@prod-dbbigstock05.nj02.bigstockcorp.net"
+alias db06="ssh nmeaney@prod-dbbigstock12.nj02.bigstockcorp.net"
+
+# Workers
+alias prodwork08="ssh nmeaney@prod-worker08.nj02.bigstockcorp.net"
+
+# Dev
+alias bigdev="ssh bigstock_dev"
+
+# QA
+alias qarevpro01="ssh nmeaney@qa-review-processor01.nj01.bigstockcorp.net"
+
