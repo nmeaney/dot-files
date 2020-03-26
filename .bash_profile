@@ -32,6 +32,7 @@ complete -C aws_completer aws
 unset ${!DOCKER_*}
 
 # Yarn
+export PATH="$PATH:/Users/nmeaney/.yarn/bin"
 export PATH="$PATH:`yarn global bin`"
 
 # git-bash-prompt - installed with brew install bash-git-prompt

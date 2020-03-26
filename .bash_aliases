@@ -63,6 +63,7 @@ alias n4="cl;nvm use v4"
 alias n6="cl;nvm use v6"
 alias n8="cl;nvm use v8"
 alias n10="cl;nvm use v10"
+alias n12="cl;nvm use v12"
 alias n010="cl;nvm use v0.10"
 alias n012="cl;nvm use v0.12"
 alias naws="cl;nvm use v6.10"
@@ -83,7 +84,7 @@ alias npgi="npm i -g babel-cli browserify eslint glance grunt-cli gulp npm-check
 alias npd="rm npm-debug.log"
 alias npo="npm outdated"
 alias npv="npm version"
-alias rn="yarn"
+alias yr="yarn"
 
 # MongodB
 # Run "brew services start mongodb" after "brew install mongodb" before using these commands:
