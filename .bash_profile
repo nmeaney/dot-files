@@ -37,9 +37,6 @@ complete -C aws_completer aws
 # Unset Docker Toolbox env vars to allow Docker for Mac to work
 unset ${!DOCKER_*}
 
-# Yarn
-export PATH="$PATH:`yarn global bin`"
-
 # git-bash-prompt - installed with brew install bash-git-prompt
 if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
@@ -56,3 +53,17 @@ source <(kubectl completion bash)
 export PATH="/usr/local/opt/rock-runtime-ruby22/bin:$PATH"
 export PATH="/usr/local/opt/rock-runtime-node6/bin:$PATH"
 export PATH="/usr/local/opt/erlang@20/bin:$PATH"
+
+# Yarn - install specific version globally with:
+# curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
+
+# Silence zsh default shell message
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# For enterprise-next
+export NODE_CONFIG_ENV=qa
+

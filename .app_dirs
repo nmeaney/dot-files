@@ -18,22 +18,32 @@ alias socg="cd ~/development/projects/socialguard/;n012;gs"
 alias big="cd ~/development/bigstock/;n010;la"
 alias web="cd ~/development/bigstock/web/;n010;gs"
 alias base="cd ~/development/shutterstock/base-web;n8;gs"
-alias foot="cd ~/development/shutterstock/footage-api;n8;gs"
-alias sstk="cd ~/development/shutterstock/sstk/;n8;gs"
-alias off="cd ~/development/offset/offset-web/;n6;gs"
+alias sapi="cd ~/development/shutterstock/studio-api;nvm use sstk;gs"
+alias sstk="cd ~/development/shutterstock/sstk/;nvm use sstk;gs"
+alias ops="cd ~/development/operations/"
+alias zeus="cd ~/development/editorial/zeus;nvm use sstk;gs"
+alias prem="cd ~/development/premier/premier-web;nvm use prem;gs"
+alias ent="cd ~/development/enterprise/enterprise-web;nvm use ent;gs"
+
+# Contributor & Offset
+alias ccall="cd ~/development/contributor/;ls -la"
+alias ccapi="cd ~/development/contributor/contributor-carbon-api/;nvm use ccapi;gs"
+alias ccweb="cd ~/development/contributor/contributor-carbon-web/;nvm use ccweb;gs"
+alias ccimp="cd ~/development/contributor/impersonate/;nvm use ccapi;gs"
+alias offset="cd ~/development/offset/offset-web/;nvm use off;gs"
+alias offadm="cd ~/development/offset/offset-admin/;nvm use off;gs"
 
 # Testing
 alias jst="TEST_ENV=dev NODE_ENV= NODE_CONFIG_DIR=./packages/server/src/config npr test:unit"
 alias ats="BROWSER=chrome DEV_BIGSTOCK_URL='https://www.bigstockphoto.com' ROCK_ENV=dev bundle exec cucumber"
-
 alias dksstk="docker run -p 80:3000 -it -v /Users/nmeaney/development/shutterstock/sstk:/app sstk /bin/bash"
 
 ################################################################################
 # dB Shell
 alias proddb="mysql -h dbrobigstock.bigstockcorp.net -u nmeaney -P 5306 -p coolstockphotos -A"
 
-# Screendoor
-alias ndoor="ssh screendoor_nj02"
+# Screendoor - 3 nodes - 03, 04, 05
+alias ndoor="ssh ops-screendoor03.nj02.shuttercorp.net"
 
 # Logs
 alias logs="ssh logs.shuttercorp.net"
@@ -41,20 +51,11 @@ alias qalogs="ssh logs.qa.shuttercorp.net"
 alias devlogs="ssh logs.dev.shuttercorp.net"
 
 # FTP Servers
-alias ftp1="ssh bigstock_ftp_1" # prod-ftp01.nj02.bigstockcorp.net
-alias ftp2="ssh bigstock_ftp_2" # prod-ftp02.nj02.bigstockcorp.net"
+alias ftp1="ssh bigstock_ftp_1" # prod-ftp01.us-east-1.bigstockcorp.net
+alias ftp2="ssh bigstock_ftp_2" # prod-ftp02.us-east-1.bigstockcorp.net"
 
 # dB Servers
 alias db01="ssh nmeaney@prod-dbbigstock03.nj02.bigstockcorp.net"
 alias db03="ssh nemaney@prod-dbbigstock05.nj02.bigstockcorp.net"
 alias db06="ssh nmeaney@prod-dbbigstock12.nj02.bigstockcorp.net"
-
-# Workers
-alias prodwork08="ssh nmeaney@prod-worker08.nj02.bigstockcorp.net"
-
-# Dev
-alias bigdev="ssh bigstock_dev"
-
-# QA
-alias qarevpro01="ssh nmeaney@qa-review-processor01.nj01.bigstockcorp.net"
 
